@@ -41,6 +41,6 @@ The above schema was created and records were inserted from data/log_data and da
 1. Create, drop, insert table statements in sql_queries.py
 2. Run create_tables.py to create DB and tables.
 3. Run test.ipynb to check if tables were created correctly. 
-4. Build ETL processes by following instructions in elt.ipynb and running test.ipynb to confirm insertions were successful. 
+4. Build ETL processes by following instructions in elt.ipynb to confirm insertions were successful. 
 5. Complete etl.py from elt.ipynb to process the entire dataset. Rerun create_tables.py to reset tables then execute etl.py.
 6. Run again test.ipynb to confirm all insertions were successful. Restart kernel to close DB connection after executing this script.
