@@ -34,4 +34,4 @@ def process_data(cur, conn, filepath, func)
 2. Drop table statements in sql_queries.py
 3. Run create_tables.py to create DB and tables.
 4. Run test.ipynb to check if tables were created correctly. 
-5. Build ETL processes by following instructions in elt.ipynb and running test.ipynb to confirm insertions were successful. After this, complete etl.py from elt.ipynb to process the entire dataset. Run again test.ipynb to fonfirm all insertions were successful.
+5. Build ETL processes by following instructions in elt.ipynb and running test.ipynb to confirm insertions were successful. After this, complete etl.py from elt.ipynb to process the entire dataset. Run again test.ipynb to confirm all insertions were successful.
