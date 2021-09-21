@@ -30,8 +30,9 @@ The above schema was created and records were inserted across all the 30 files t
 
 # Project Steps
 
-1. Create table statements in sql_queries.py
-2. Drop table statements in sql_queries.py
-3. Run create_tables.py to create DB and tables.
-4. Run test.ipynb to check if tables were created correctly. 
-5. Build ETL processes by following instructions in elt.ipynb and running test.ipynb to confirm insertions were successful. After this, complete etl.py from elt.ipynb to process the entire dataset. Run again test.ipynb to confirm all insertions were successful.
+1. Create, drop, insert table statements in sql_queries.py
+2. Run create_tables.py to create DB and tables.
+3. Run test.ipynb to check if tables were created correctly. 
+4. Build ETL processes by following instructions in elt.ipynb and running test.ipynb to confirm insertions were successful. 
+5. Complete etl.py from elt.ipynb to process the entire dataset. 
+6. Run again test.ipynb to confirm all insertions were successful.
