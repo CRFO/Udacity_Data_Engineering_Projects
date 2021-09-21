@@ -13,7 +13,7 @@ The project builds an ETL pipeline using Python and SQL transferring data from 2
 ### users - list of users: *user_id, first_name, last_name, gender, level*
 ### songs - list of songs: *song_id, title, artist_id, year, duration*
 ### artists - list of artists: *artist_id, name, location, latitude, longitude*
-### time* - timestamps of records in songplays:  start_time, hour, day, week, month, year, weekday
+### time - timestamps of records in songplays:  start_time, hour, day, week, month, year, weekday
 
 The above schema was created and records were inserted across all the 30 files then data was loaded into the tables one by one.
 
