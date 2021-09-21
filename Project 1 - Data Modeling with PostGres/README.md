@@ -44,3 +44,4 @@ The above schema was created and records were inserted from data/log_data and da
 4. Build ETL processes by following instructions in elt.ipynb to confirm insertions were successful. 
 5. Complete etl.py to build ETL pipeline from elt.ipynb to process the entire dataset. Rerun create_tables.py to reset tables then execute etl.py.
 6. Run again test.ipynb to confirm all insertions were successful. Restart kernel to close DB connection after executing this script.
+Note: Four extra SQL queries were included in test.ipynb to give SQL examples.
