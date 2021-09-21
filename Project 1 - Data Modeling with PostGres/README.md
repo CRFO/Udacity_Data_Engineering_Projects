@@ -9,10 +9,10 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 - *data/* folder contains log_data and song_data files in JSON format.
 - *sql_queries.py* defines the SQL queries to create, drop and insert into tables.
 - *create_tables.py* creates the Sparkify DB and executes creation and deletion of all tables.
-- *etl.py* reads and processes the song and log JSON files and inserts them into the PostGres DB.
+- *etl.py* reads and processes the song and log JSON files and inserts them into the Postgres DB.
 - *etl.ipynb* and test.ipynb test execution of the Python scripts and SQL statements respectively.
 
-# Star Schema
+# Star Schema (PostgreSQL relational database)
 
 ## Fact Table
 ### songplays - song plays records from log data: *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
