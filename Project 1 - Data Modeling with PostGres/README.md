@@ -23,7 +23,7 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 ### artists - list of artists: *artist_id, name, location, latitude, longitude*
 ### time - timestamps of records in songplays:  start_time, hour, day, week, month, year, weekday
 
-The above schema was created and records were inserted from data/log_data and data/song_data JSON files then data was loaded into the tables one by one.
+The above schema was created and records were inserted from data/log_data and data/song_data JSON files into the tables one by one.
 
 # Load functions
 
