@@ -15,7 +15,7 @@ The project builds an ETL pipeline using Python and SQL transferring data from 2
 ### artists - list of artists: *artist_id, name, location, latitude, longitude*
 ### time - timestamps of records in songplays:  start_time, hour, day, week, month, year, weekday
 
-The above schema was created and records were inserted across all the 30 files then data was loaded into the tables one by one.
+The above schema was created and records were inserted from data/log_data and data/song_data JSON files then data was loaded into the tables one by one.
 
 # Load functions:
 
