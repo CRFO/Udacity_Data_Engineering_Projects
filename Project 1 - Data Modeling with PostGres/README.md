@@ -4,7 +4,7 @@
 
 The project builds an ETL pipeline using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables: *songplays, users, songs, artists and time*.
 
-# Schema
+# Star Schema
 
 ## Fact Table
 ### songplays - song plays records from log data: *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
