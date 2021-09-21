@@ -1,4 +1,4 @@
-# Project: Data Modeling with PostGres
+# Project: Data Modeling with Postgres
 
 # Summary
 
