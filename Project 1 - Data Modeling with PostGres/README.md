@@ -19,9 +19,9 @@ The above schema was created and records were inserted across all the 30 files t
 
 # Load functions:
 
-def process_log_file(cur, filepath)
-def process_song_file(cur, filepath)
-def process_data(cur, conn, filepath, func)
+- def process_log_file(cur, filepath)
+- def process_song_file(cur, filepath)
+- def process_data(cur, conn, filepath, func)
 
 # Scripts to execute in IPython in the following order:
 
