@@ -2,7 +2,7 @@
 
 # Summary
 
-The project builds an ETL pipeline for the music streaming app Sparkify using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables: *songplays, users, songs, artists and time*.
+The project builds an ETL pipeline for the music streaming app Sparkify using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables using a Postgres database: *songplays, users, songs, artists and time*.
 
 # Files Structure
 
@@ -39,8 +39,8 @@ The above schema was created and records were inserted from data/log_data and da
 # Project Steps
 
 1. Create, drop, insert table statements in sql_queries.py
-2. Run create_tables.py to create DB and tables.
-3. Run test.ipynb to check if tables were created correctly. 
+2. Run create_tables.py to create sparkifydb database and tables.
+3. Run test.ipynb to check if tables were created correctly. Restart kernel to close DB connection after executing this script.
 4. Build ETL processes by following instructions in elt.ipynb to confirm insertions were successful. 
-5. Complete etl.py from elt.ipynb to process the entire dataset. Rerun create_tables.py to reset tables then execute etl.py.
+5. Complete etl.py to build ETL pipeline from elt.ipynb to process the entire dataset. Rerun create_tables.py to reset tables then execute etl.py.
 6. Run again test.ipynb to confirm all insertions were successful. Restart kernel to close DB connection after executing this script.
