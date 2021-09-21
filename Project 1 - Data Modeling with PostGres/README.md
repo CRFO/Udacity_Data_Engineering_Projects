@@ -4,6 +4,14 @@
 
 The project builds an ETL pipeline using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables: *songplays, users, songs, artists and time*.
 
+# Files Structure:
+
+- *data/* folder contains log_data and song_data files in JSON format.
+- *sql_queries.py* defines the SQL queries to create, drop and insert into tables.
+- *create_tables.py* creates the Sparkify DB and executes creation and deletion of all tables.
+- *etl.py* reads and processes the song and log JSON files and inserts them into the PostGres DB.
+- *etl.ipynb* and test.ipynb test execution of the Python scripts and SQL statements respectively.
+
 # Star Schema
 
 ## Fact Table
@@ -23,12 +31,12 @@ The above schema was created and records were inserted from data/log_data and da
 - def process_song_file(cur, filepath)
 - def process_data(cur, conn, filepath, func)
 
-# Scripts to execute in IPython in the following order:
+# Scripts to execute in IPython:
 
 1. run create_tables.py
 2. run etl.py
 
-# Project Steps
+# Project Steps:
 
 1. Create, drop, insert table statements in sql_queries.py
 2. Run create_tables.py to create DB and tables.
