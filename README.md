@@ -4,8 +4,8 @@ Projects for Udacity Data Engineering (PostGres,  Cassandra, S3, Spark, AWS &amp
 
 1. Data Modeling Course
 
-Project 1: Data Modeling with PostGres: Sparkify song play logs ETL process 
-Project 2: Data Modeling with Apache Cassandra: Sparkify song play logs ETL process
+- Project 1: Data Modeling with PostGres: Sparkify song play logs ETL process 
+- Project 2: Data Modeling with Apache Cassandra: Sparkify song play logs ETL process
 
 2. Cloud Data Warehouses
 
