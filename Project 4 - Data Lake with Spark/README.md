@@ -13,7 +13,7 @@ The analytics team will be able to execute queries from the tables above to find
 
 - *dl.cfg* stores AWS access key ID and secret access key. Both keys have been removed for safety reasons.
 - *etl.py* loads song_data and log_data JSON files located in S3 then writes the data into songplays, users, songs, artists and time table directories with partitioned parquet format in S3. 
-- *test.ipynb* loads song_data and log_data from S3 and writes partitioned parquet files in table directories in S3. The song_data only reads JSON files under A folders.
+- *test.ipynb* loads song_data and log_data from S3 and writes partitioned parquet files in table directories in S3. The song_data only reads JSON files under the top 2 A folders.
 - *README.md* gives an explanation of this project and how to execute it.
 
 # Tables:
