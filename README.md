@@ -13,11 +13,11 @@ Projects for Udacity Data Engineering (PostGres,  Cassandra, S3, Spark, AWS &amp
 
 3. Data Lakes with Spark
 
-- Project 4: Sparkify's Data Lake ELT process
+- Project 4: Data Lake with Spark: Sparkify's Data Lake ELT process
 
 4. Data Pipelines with Airflow
 
-- Project 5: Sparkify's Event Logs Data Pipeline
+- Project 5: Data Pipeline with Airflow: Sparkify's Event Logs Data Pipeline
 
 5. Capstone Project
 
