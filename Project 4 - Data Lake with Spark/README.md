@@ -35,10 +35,9 @@ The analytics team will be able to execute queries from the tables above to find
 
 # Steps to execute code
 
-1. Execute test.ipynb script to load log and song JSON files from S3 and create partitioned parquet files in table directories in S3. 
-2. Create AWS EMR Cluster with 1 Master node and 2 worker nodes using UI (or CLI command) with installation of Spark.
-3. Copy etl.py and dl.cfg to hadoop file system in Cluster (with a command like this: scp -i <key pair>.pem dl.cfg etl.py <hadoop link>:~/)
-4. Execute Python etl.py script with command at the /home/hadoop directory: "spark-submit --master yarn etl.py".
+1. Create AWS EMR Cluster with 1 Master node and 2 worker nodes using UI (or CLI command) with installation of Spark.
+2. Copy etl.py and dl.cfg to hadoop file system in Cluster (with a command like this: scp -i <key pair>.pem dl.cfg etl.py <hadoop link>:~/)
+3. Execute Python etl.py script with command at the /home/hadoop directory: "spark-submit --master yarn etl.py".
 
 # Project Steps
 
