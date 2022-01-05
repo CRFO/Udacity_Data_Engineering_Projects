@@ -30,7 +30,7 @@ def create_spark_session():
 
 def process_data(spark, config):
     """
-     Description: This function reads all files under I94_Folder. It also reads city demographics, airport data and                  labels/descriptions of I94 SAS files. Then it cleans dataframes then it writes the 3 dataframes into partitioned              parquet format in S3.
+     Description: This function reads all files under I94_Folder. It also reads city demographics, airport data and labels/descriptions of I94 SAS files. Then it cleans dataframes then it writes the 3 dataframes into partitioned              parquet format in S3.
      Arguments:
         spark: Spark session object
         config: config object
@@ -94,11 +94,12 @@ def process_data(spark, config):
         
     # Remove duplicate rows of city table and replace all column names 
     # that have a space with underscore from city_table. Drop any null values of city table.
-    city_table = df_city.select("City", "State", col("Median Age").alias("Median_Age"), \
-        col("Male Population").alias("Male_Population"), col("Female Population").alias("Female_Population"), \
-        col("Total Population").alias("Total_Population"), col("Number of Veterans").alias("Number_of_Veterans"), \
-        "Foreign-born", col("Average Household Size").alias("Average_Household_Size"), \
-        col("State Code").alias("State_Code"), "Race", "count").na.drop().distinct()
+    city_table = df_city.select(col("City").alias("city"), col("State").alias("state"),\
+        col("Median Age").alias("median_age"),col("Male Population").alias("male_population"),\
+        col("Female Population").alias("female_population"), col("Total Population").alias("total_population"),\
+        col("Number of Veterans").alias("number_of_veterans"),col("Foreign-born").alias("foreign_born"), \
+        col("Average Household Size").alias("average_household_size"), col("State Code").alias("state_code"),\
+        col("Race").alias("race"), "count").na.drop().distinct()
 
     # Remove duplicate rows and any rows with null values of airport table
     airport_table = df_airport.na.drop().distinct()
@@ -184,7 +185,7 @@ def quality_check(config, check_data,check_name,check_function):
         
 def main():
     """
-    Description: This function reads config file, retrieves AWS access keys, creates a Spark session then reads immigration,            city demographics and airport data from local workspace folder to transform data then creates parquet files in S3. 
+    Description: This function reads config file, retrieves AWS access keys, creates a Spark session then reads immigration, city demographics and airport data from local workspace folder to transform data then creates parquet files in S3. 
     Arguments: None
     Returns: None
     """
@@ -196,7 +197,6 @@ def main():
     os.environ['AWS_SECRET_ACCESS_KEY']=config['KEYS']['AWS_SECRET_ACCESS_KEY']
 
     spark = create_spark_session()
-    
     process_data(spark, config)    
 
 if __name__ == "__main__":
