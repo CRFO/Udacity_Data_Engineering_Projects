@@ -21,4 +21,4 @@ Projects for Udacity Data Engineering (PostGres,  Cassandra, S3, Spark, AWS &amp
 
 5. Capstone Project
 
-- Travel to US: a simple and unified dataset with immigration from around the globe to US.
+- Capstone Project: Data Lake Project
