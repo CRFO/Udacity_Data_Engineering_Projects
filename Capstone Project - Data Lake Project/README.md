@@ -34,7 +34,7 @@ Generate partitioned parquet files in table directories:
 | Table Name      | Description        | Partition By  | 
 | --- | --- | --- | 
 | immigration_table | Fact table that has US i94 immigration data | i94year, i94mon and i94port |
-| city_table | Dimension table that has city demographics data | State Code |
+| city_table | Dimension table that has city demographics data | state_code |
 | airport_table | Dimension table that has US airport data | iata_code |
 
 The immigration_table has been partitioned by year, month and airport code for better performance on aggregration queries. This could be even more helpful when loading i94 files from many years. The aiport_table has been aggregrated by iata_code (airport code) while city_table has been aggregrated by state_code. Data dictionary of data model is included below.
@@ -136,7 +136,7 @@ This data model was chosen since the project intention is to create a data lake 
 
 #### The data was increased by 100x.
 
-- Use AWS EMR & Spark to process the data. This can be executed after creating a AWS EMR cluster, copying capstone.cfg and capstone.py files and running capstone.py to hadoop file system in cluster then executing pythoin file with the spark-submit command.
+- Use AWS EMR & Spark to process the data. This can be executed after creating a AWS EMR cluster, copying capstone.cfg and capstone.py files to hadoop file system and running capstone.py in cluster then executing pythoin file with the spark-submit command.
  
 ##### The data populates a dashboard that must be updated on a daily basis by 7am every day.
  - A schematized data warehouse should be created based on the parquet output files using Apache Airflow to schedule a Spark job to run on a daily basis. In case of any issue arises, email notification can be setup to notify a team to fix any errors. 
