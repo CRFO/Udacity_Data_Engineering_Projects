@@ -2,7 +2,7 @@
 
 # Summary:
 
-The project builds an ETL pipeline for the music streaming app Sparkify using a Spark job in Python to transfer JSON files (song_data and log_data) from S3 to the following table directories with partitioned parquet format in S3:
+The project builds an ETL pipeline for the music streaming app Sparkify using a Spark job to transfer JSON files (song_data and log_data) from S3 to the following table directories with partitioned parquet format in S3:
 
 - Fact table: *songplays*
 - Dimmension tables: *users*, *songs*, *artists* and *time*
