@@ -23,7 +23,7 @@ The analytics team will be able to execute queries from the tables above to find
 
 ## Dimension Tables
 - users - list of users: *userId, firstName, lastName, gender, level*
-- songs - list of songs: *song_id, title, artist_id, year, duration* partiioned by year and artist_id.
+- songs - list of songs: *song_id, title, artist_id, year, duration* partitioned by year and artist_id.
 - artists - list of artists: *artist_id, artist_name, artist_location, artist_latitude, artist_longitude*
 - time - timestamps of records in song plays:  *start_time, hour, day, week, month, year, weekday* partiioned by year and month.
 
