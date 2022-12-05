@@ -1,6 +1,6 @@
 # Projects for Udacity Data Engineering Course
 
-Projects for Udacity Data Engineering (PostGres,  Cassandra, S3, Spark, AWS &amp; Airflow)
+Projects for Udacity Data Engineering (PostGres,  Cassandra, AWS Redshift/EMR, Spark & Airflow)
 
 1. Data Modeling Course
 
