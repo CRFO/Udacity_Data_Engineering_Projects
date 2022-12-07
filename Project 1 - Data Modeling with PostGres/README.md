@@ -15,7 +15,7 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 # Star Schema (PostgreSQL relational database)
 
 ## Fact Table
-- songplays - list of records from log data withy song plays: *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
+- songplays - list of records from log data with song plays: *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
 
 ## Dimension Tables
 - users - list of users: *user_id, first_name, last_name, gender, level*
